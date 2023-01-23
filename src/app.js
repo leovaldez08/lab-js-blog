@@ -29,3 +29,15 @@ class Blog {
 function helperAddPost() {
   document.getElementById('popupContact').style.display = 'inline';
 }
+
+// 2.
+function helperPost() {
+  let title = document.getElementById('title').value
+  let description = document.getElementById('detail').value
+
+  blog = new Blog(title, description);
+  blog.addTitle();
+  blog.addDescription();
+
+  document.getElementById('popupContact').style.display = 'none';
+}
